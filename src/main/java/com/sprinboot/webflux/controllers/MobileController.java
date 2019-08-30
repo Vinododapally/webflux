@@ -16,6 +16,7 @@ public class MobileController {
 
     @PostMapping("/save")
     public Mono<Mobile> saveMobile(@RequestBody Mobile mobile){
+        System.out.println("saveMobile method is executing");
         return  mobileRepsoitory.save(mobile);
     }
 
